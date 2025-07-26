@@ -219,13 +219,14 @@ main section{
 .resume:hover{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
-.resume-section-titel{
+.resume-section-title{
      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
      text-align: center;
      padding: 10px;
      margin-left: 250px;
      margin-right: 250px;
      border-radius: 15px;
+     
      
 }
 .resume-section-titel:hover{
@@ -277,7 +278,48 @@ textarea{
     width: 100%;
     font-size: 24;
 }
-
+/*  RESPONSIVE MEDIA QUERY */
+.hide{
+    display: none;
+}
      
+@media screen and (max-width:576px) {
+    .skills-container, .resume-container, .resume-column footer{
+        flex-direction: column;
+    }
+    .section-description{
+        text-align: justify;
+        padding: 20px;
+    }
+    .resume-section-title {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  footer{
+    padding: 20px;
+    flex-direction: column;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  .social-links{
+    padding-top: 30px;
+  }
+  .Contact{
+    padding-right: 100px;
+  }
+  .about-secondary-bg{
+    padding: 20px;
 
+  }
+  .about-items{
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+    
+  }
+  
+}
 
